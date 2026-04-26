@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Head from "next/head"
 import axios from "axios"
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API = "/api/proxy"
 
 export default function Dashboard() {
   const { data: session, status } = useSession()
